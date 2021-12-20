@@ -55,6 +55,18 @@ a {
     background-position: center;
 }
 
+#hero-wrapper-rodents{
+    grid-area: hero;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(/pictures/Rodents/bunny.jpg);
+    background-position: center;
+}
+ 
 /* #sidebar {
     width: 100%;
     border: 1px solid black;
@@ -82,8 +94,6 @@ a {
     display: flex;
     justify-content:space-around;
     align-items: flex-start;
-    
-    
 }
 
 #hundvalpar{
@@ -141,6 +151,17 @@ a {
     border-radius: 50%;
 }
 
+#hem{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10em;
+    width: 10em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
 #footer{
     width: 100%;
     display: flex;
@@ -150,4 +171,5 @@ a {
     background-color: black;
     color:antiquewhite;
 }
+
 
