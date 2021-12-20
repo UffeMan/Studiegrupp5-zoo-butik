@@ -3,3 +3,151 @@
     margin:  0px;
     box-sizing: border-box;
 }
+
+body {
+    width: 100%;
+    background: lightgray;
+    display: grid;
+    grid-template: "header header header header " 10vh
+    /* ". . . . ." 3vh */
+    ". hero hero ." 80vh
+    /* ". . .  ." 3vh */
+    ". contents contents  ." 35vh
+    /* ". . . . ." 3vh */
+    "footer footer footer footer" 10vh / 1fr 3fr 3fr 1fr;
+    grid-gap: 1em;
+}
+
+li {
+    margin: 5px;
+    list-style: none;
+}
+
+a {
+    margin: 20px;
+    cursor: pointer;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    background-color: rgb(85, 49, 29);
+    color:antiquewhite;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#hero-wrapper {
+    grid-area: hero;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(/pictures/841187-roda-ekorren-on-the-snow-fotona.jpg);
+    background-position: center;
+}
+
+/* #sidebar {
+    width: 100%;
+    border: 1px solid black;
+    grid-area: sidebar;
+    background: antiquewhite;
+} */
+
+/* .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+} */
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: contents;
+    background: gray;
+}
+
+.content-info{
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    
+    
+}
+
+#hundvalpar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10em;
+    width: 10em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#kattungar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10em;
+    width: 10em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#gnagare{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10em;
+    width: 10em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#papegojor{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10em;
+    width: 10em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#reptiler{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10em;
+    width: 10em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#footer{
+    width: 100%;
+    display: flex;
+    grid-area: footer;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:antiquewhite;
+}
+
