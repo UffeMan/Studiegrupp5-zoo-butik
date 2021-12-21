@@ -388,6 +388,59 @@ a {
     border-radius: 50%;
 }
 
+
+
+
+
+
+#puppies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    grid-area: hero;
+    
+}
+
+
+
+.hundvalpar-title{
+    font-family:cursive;
+    font-size: 20px;
+    margin:10px;
+    display: flex;
+    justify-content: center;
+}
+
+.hundvalpar-info{
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+
+
+#valp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    width: 10em;
+}
+
+.valpBild{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    width: 8em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+
 #hem{
     display: flex;
     flex-direction: column;
@@ -407,22 +460,19 @@ a {
     justify-content: center;
     align-items: center;
     color:white;
-    background-color: rgba(0, 0, 0, 0.473);   
+    background-image: url(/pictures/Wow-intresting.jpg);
+    background-position: center;  
 }
 
 #footer-container{
-    z-index: -5;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;  
-    background-image: url(/pictures/Wow-intresting.jpg);
-    background-position: center; 
 }
 
 #footer-adress{
-    z-index: 1;
     width: 50%;
     height:18vh;
     display: block;
