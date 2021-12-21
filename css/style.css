@@ -12,6 +12,7 @@ body {
     /* ". . . . ." 3vh */
     ". hero hero ." 80vh
     /* ". . .  ." 3vh */
+    ". main main ." auto
     ". contents contents  ." 35vh
     /* ". . . . ." 3vh */
     "footer footer footer footer" 10vh / 1fr 3fr 3fr 1fr;
@@ -24,8 +25,13 @@ li {
 }
 
 a {
-    margin: 20px;
+    margin: 5px;
     cursor: pointer;
+    font-family:cursive;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
 }
 
 #header {
@@ -37,13 +43,160 @@ a {
     color:antiquewhite;
 }
 
+
+#header-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-company{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.2em;
+    color:antiquewhite;
+}
+
+.link:hover{
+    text-decoration: none;
+    font-size: 1.2em;
+    color:rgb(248, 191, 116);
+}
+
 .navbar ul{
     display: flex;
     justify-content:space-around;
     align-items: center;
 }
 
-#hero-wrapper {
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color:antiquewhite;    
+}
+.navbar ul li a:hover,
+#footer-follow ul li a:hover{
+    text-decoration: none;
+    font-size: 1.2em;
+    color:rgb(248, 191, 116);
+    
+}
+
+.hero-info{
+    width: auto;
+}
+
+#reptiles-hero-wrapper {
+    grid-area: hero;
+    border: 1px solid black;
+    position: relative;
+    display: grid;
+    grid-template: "video1 content1" auto
+    "content2 video2" auto / 1fr 1fr;
+    grid-row-gap: 0.5em;
+    background: black;
+    font-family: sans-serif;
+}
+
+/* .reptiles-hero-overlay {
+    width: 100%;
+    height: 100%;
+} */
+
+.reptiles-hero-video1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    grid-area: video1;
+}
+
+.video1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reptiles-hero-video2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    grid-area: video2;
+}
+
+.video2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reptiles-hero-content1,
+.reptiles-hero-content2 {
+    display: grid;
+    grid-template: "title" 20%
+    "content" 80%;
+}
+
+.reptiles-hero-content1 {
+    grid-area: content1;
+}
+
+.reptiles-hero-title {
+    font-size: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: gray;
+}
+
+.reptiles-hero-content {
+    background: white;
+    padding: 0.6em;
+}
+
+.reptiles-hero-content2 {
+    grid-area: content2;
+}
+
+.main-content-reptiles {
+    border: 1px solid black;
+    grid-area: main;
+    display: grid;
+    grid-template: "food needs" / 1fr 1fr;
+    height: 25em;
+}
+
+.reptilian-food,
+.reptilian-needs {
+    height: 20%;
+    background: grey;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-wrapper,
+#hero-wrapper-rodents,
+#hero-wrapper-parrots {
     grid-area: hero;
     width: 100%;
     border: 1px solid black;
@@ -55,18 +208,41 @@ a {
     background-position: center;
 }
 
-#hero-wrapper-rodents{
-    grid-area: hero;
-    width: 100%;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+#hero-wrapper-rodents{    
     background-image: url(/pictures/Rodents/bunny.jpg);
-    background-position: center;
+    background-size: auto auto;
+    background-repeat: no-repeat;
 }
- 
+
+#hero-wrapper-parrots{
+    background-image: url(/pictures/Kittens/cat2.jpg);
+    height: 100%;
+    text-align: center;
+}
+
+#main-content-parrots{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 2em;
+}
+
+#main-content-parrots h3{
+    width: 100%;
+}
+
+#main-content-parrots img{
+    height: 15em;
+    width: auto;
+}
+.picture-row {
+    flex: 24%;
+    padding: 2em 0.2em;
+}
+
 /* #sidebar {
     width: 100%;
     border: 1px solid black;
@@ -85,24 +261,43 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: space-between;
     grid-area: contents;
     background: gray;
 }
 
+.content-title{
+    font-family:cursive;
+    font-size: 20px;
+    margin:10px;
+    display: flex;
+    justify-content: center;
+}
+
 .content-info{
     display: flex;
-    justify-content:space-around;
-    align-items: flex-start;
+    justify-content:space-between;
+    
 }
+
+
 
 #hundvalpar{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: 10em;
     width: 10em;
+}
+
+.dog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    width: 8em;
     border: 1px solid white;
     border-radius: 50%;
 }
@@ -110,10 +305,19 @@ a {
 #kattungar{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: 10em;
     width: 10em;
+}
+
+.kat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    width: 8em;
     border: 1px solid white;
     border-radius: 50%;
 }
@@ -121,10 +325,19 @@ a {
 #gnagare{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: 10em;
     width: 10em;
+}
+
+.mouse{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    width: 8em;
     border: 1px solid white;
     border-radius: 50%;
 }
@@ -132,10 +345,19 @@ a {
 #papegojor{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: 10em;
     width: 10em;
+}
+
+.bird{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    width: 8em;
     border: 1px solid white;
     border-radius: 50%;
 }
@@ -143,10 +365,19 @@ a {
 #reptiler{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: 10em;
     width: 10em;
+}
+
+.snake{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    width: 8em;
     border: 1px solid white;
     border-radius: 50%;
 }
@@ -164,12 +395,58 @@ a {
 
 #footer{
     width: 100%;
+    height: 20vh;
     display: flex;
     grid-area: footer;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color:antiquewhite;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.473);   
 }
 
+#footer-container{
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-image: url(/pictures/Wow-intresting.jpg);
+    background-position: center; 
+}
 
+#footer-adress{
+    z-index: 1;
+    width: 50%;
+    height:18vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-adress p{
+    color:rgb(248, 214, 170);
+    margin-left: 40%;
+}
+
+#footer-follow{
+    height:18vh;
+    width: 50%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-follow a{
+    font-size: 1.0em;
+    text-decoration: none;
+    color:rgb(248, 214, 170);
+    margin-left: 40%;
+    cursor: pointer;
+    font-weight: 300;  
+}
+
+#footer-follow a:hover{
+    font-size: 1.0em;
+    color:rgb(253, 182, 90);
+}
