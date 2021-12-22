@@ -195,7 +195,6 @@ a {
 }
 
 #hero-wrapper,
-#hero-wrapper-rodents,
 #hero-wrapper-parrots {
     grid-area: hero;
     width: 100%;
@@ -209,9 +208,16 @@ a {
 }
 
 #hero-wrapper-rodents{    
-    background-image: url(/pictures/Rodents/bunny.jpg);
+   /* background-size: 100% 100%;
+    height: 100%;
+    text-align: center;*/
+   /* background-image: url(/pictures/Rodents/bunny.jpg);*/
     background-size: auto auto;
     background-repeat: no-repeat;
+}
+.rodent-video{
+    width: 100%;
+    object-fit: cover;
 }
 
 #hero-wrapper-parrots{
@@ -296,7 +302,16 @@ a {
     height: 10em;
     width: 10em;
 }
-
+#hundvalpar1 img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    width: 8em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
 .dog{
     display: flex;
     flex-direction: column;
@@ -315,6 +330,16 @@ a {
     align-items: center;
     height: 10em;
     width: 10em;
+}
+#kattungar1 img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    width: 8em;
+    border: 1px solid white;
+    border-radius: 50%;
 }
 
 .kat{
@@ -337,6 +362,55 @@ a {
     width: 10em;
 }
 
+#rat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    width: 20em;
+    margin-top: 30px;
+}
+#bunny{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    width: 20em;
+    margin-top: 50px;
+}
+
+#hamster{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    width: 20em;
+    margin-top: 35px;
+}
+
+h3,
+h4{
+    text-align: center;
+    align-items: center;
+    margin:10px;
+}
+
+.rat-info{
+    border: 1px solid white;
+}
+
+.rat-info img{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 .mouse{
     display: flex;
     flex-direction: column;
@@ -355,6 +429,16 @@ a {
     align-items: center;
     height: 10em;
     width: 10em;
+}
+#papegojor1 img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    width: 8em;
+    border: 1px solid white;
+    border-radius: 50%;
 }
 
 .bird{
@@ -375,6 +459,15 @@ a {
     align-items: center;
     height: 10em;
     width: 10em;
+}
+#papegojor1 img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
 }
 
 .snake{
