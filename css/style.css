@@ -103,6 +103,18 @@ a {
     width: auto;
 }
 
+.hero-info-bunny{
+    width: auto;
+    text-align: left;
+    margin: 20px;
+    
+}
+
+.rodents-info{
+    margin: 20px;
+    text-align: left;
+}
+
 #reptiles-hero-wrapper {
     grid-area: hero;
     border: 1px solid black;
@@ -208,13 +220,14 @@ a {
 }
 
 #hero-wrapper-rodents{    
-    grid-area: hero;   
-    text-align: center;
-    background-repeat: no-repeat;
+    grid-area: hero;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 .rodent-video{
-    width: 100%;
-    object-fit: cover;
+     position: relative;
+     width: 100%;     
 }
 
 #hero-wrapper-parrots{
@@ -368,6 +381,12 @@ a {
     width: 20em;
     margin-top: 30px;
 }
+
+#rat img{
+    border-radius: 40%;
+    border: 2px solid white;
+}
+
 #bunny{
     display: flex;
     flex-direction: column;
@@ -376,16 +395,50 @@ a {
     height: 20em;
     width: 20em;
     margin-top: 50px;
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+    bottom: 80px;
+}
+
+#bunny img {
+    border-radius: 40%;
+    border: 2px solid white;
 }
 
 #hamster{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     height: 20em;
     width: 20em;
     margin-top: 35px;
+    position: relative;
+    left: 400px;
+    bottom: 80px;
+}
+
+#hamster img{
+    border-radius: 40%;
+    border: 2px solid white;
+}
+
+#guinea-pig{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    width: 20em;
+    margin-top: 35px;
+    position: relative;
+    left: 250px;
+    bottom: 80px;
+}
+#guinea-pig img{
+    border-radius: 40%;
+    border: 2px solid white;
 }
 
 h3,
@@ -395,19 +448,6 @@ h4{
     margin:10px;
 }
 
-.rat-info{
-    border: 1px solid white;
-}
-
-.rat-info img{
-    height: 20px;
-    width: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
 .mouse{
     display: flex;
     flex-direction: column;
