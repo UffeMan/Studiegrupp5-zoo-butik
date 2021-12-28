@@ -387,62 +387,71 @@ a {
 }
 
 #rat img{
-    border-radius: 40%;
+    border-radius: 30%;
     border: 2px solid white;
+    max-width: 100vh;
 }
 
 #bunny{
+  
+    height: 20em;
+    width: 20em;
+  
+}
+
+#bunny img {
+    border-radius: 30%;
+    border: 2px solid white;
+    max-width: 100vh;
+    height: 220px;
+}
+
+#hamster{
+   
+    height: 20em;
+    width: 20em;
+    
+    
+}
+
+#hamster img{
+    border-radius: 30%;
+    border: 2px solid white;
+    max-width: 100vh;
+}
+
+#guinea-pig{
+  
+    height: 20em;
+    width: 20em;
+    
+   
+}
+#guinea-pig img{
+    border-radius: 30%;
+    border: 2px solid white;
+    max-width: 100vh;
+}
+
+.rodent-wrapper{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+
+#reptiler1 img{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20em;
-    width: 20em;
-    margin-top: 50px;
-    position: relative;
-    bottom: 10px;
-    left: 20px;
-    bottom: 80px;
-}
-
-#bunny img {
-    border-radius: 40%;
-    border: 2px solid white;
-}
-
-#hamster{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    height: 20em;
-    width: 20em;
-    margin-top: 35px;
-    position: relative;
-    left: 400px;
-    bottom: 80px;
-}
-
-#hamster img{
-    border-radius: 40%;
-    border: 2px solid white;
-}
-
-#guinea-pig{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    height: 20em;
-    width: 20em;
-    margin-top: 35px;
-    position: relative;
-    left: 250px;
-    bottom: 80px;
-}
-#guinea-pig img{
-    border-radius: 40%;
-    border: 2px solid white;
+    height: 8em;
+    width: 8em;
+    border: 1px solid white;
+    border-radius: 50%;
+    
 }
 
 h3,
