@@ -161,6 +161,7 @@ a {
 
 .reptiles-hero-title {
     font-size: 1.6em;
+    padding: 0.6em;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -168,8 +169,11 @@ a {
 }
 
 .reptiles-hero-content {
-    background: white;
+    background: whitesmoke;
     padding: 0.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .reptiles-hero-content2 {
