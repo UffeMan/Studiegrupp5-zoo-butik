@@ -646,6 +646,48 @@ h4{
     font-family: cursive; 
 }
 
+#merOm:hover {
+    background: burlywood;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#puppyInfo{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    display:none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;   
+}
+
+#aboutPuppy{
+    width: 40%;
+    height: 60%;
+    border-radius: 10%;
+    background:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:40px;
+}
+
+.closeInfoBlock{
+    display: flex;
+}
+
+.closeInfoBlock:hover{
+    color: tomato;
+    cursor: pointer;
+}
+
+
 #hem{
     display: flex;
     flex-direction: column;
