@@ -638,6 +638,7 @@ h4{
     border-radius: 50%;
 }
 
+<<<<<<< Updated upstream
 #merOm{
     height:2em;
     width:8em;
@@ -645,6 +646,25 @@ h4{
     border: 1px solid white;
     font-family: cursive; 
 }
+=======
+.kitten-td{
+
+}
+
+.kitten-tr{
+
+}
+
+.kitten-img{
+    max-height: 200px;
+    max-width: 300px;
+   
+}
+
+
+
+
+>>>>>>> Stashed changes
 
 #hem{
     display: flex;
