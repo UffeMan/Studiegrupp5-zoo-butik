@@ -306,8 +306,6 @@ a {
     
 }
 
-
-
 #hundvalpar{
     display: flex;
     flex-direction: column;
@@ -533,23 +531,48 @@ h4{
 
 
 
-
-
-
-#puppies{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
+#hero-wrapper-hundvalpar {
     grid-area: hero;
-    
+    background-image: url(/pictures/hundvalpar/grouppsphoto.jpg);
+    background-position: center;
+}
+
+#hero-wrapper-hundvalpar-overlay{
+    grid-area: hero; 
+}
+
+#hero-wrapper-hundvalpar-overlay h1{
+    grid-area: hero;
+    display: flex;
+    justify-content:center;
+    font-family: cursive;
+    word-spacing: 50vh;
+}
+
+#hero-wrapper-hundvalpar-overlay h3{
+    grid-area: hero;
+    display: flex;
+    justify-content:center;
+    font-family: cursive;
+    word-spacing: 30vh;
+}
+
+#hero-wrapper-hundvalpar-overlay h2{
+    grid-area: hero;
+    display: flex;
+    justify-content:center;
+    font-family: cursive;
+    word-spacing: 40vh;
 }
 
 
+#puppies{
+    grid-area: main;
+}
 
 .hundvalpar-title{
     font-family:cursive;
-    font-size: 20px;
+    font-size: 30px;
     margin:10px;
     display: flex;
     justify-content: center;
@@ -557,19 +580,17 @@ h4{
 
 .hundvalpar-info{
     display: flex;
-    justify-content:space-between;
-    
+    justify-content:center;
+    grid-area: main;
 }
-
-
 
 #valp{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 10em;
-    width: 10em;
+    height: 300px;
+    width: 300px;
 }
 
 .valpBild{
@@ -577,12 +598,19 @@ h4{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 8em;
-    width: 8em;
+    height: 150px;
+    width: 150px;
     border: 1px solid white;
     border-radius: 50%;
 }
 
+#merOm{
+    height:2em;
+    width:8em;
+    margin: 2em;
+    border: 1px solid white;
+    font-family: cursive; 
+}
 
 #hem{
     display: flex;
