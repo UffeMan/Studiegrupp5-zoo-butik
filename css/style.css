@@ -292,6 +292,16 @@ a {
     background: gray;
 }
 
+#rodent-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    grid-area: contents;
+    background: gray;
+    padding: 20px;
+}
+
 .content-title{
     font-family:cursive;
     font-size: 20px;
@@ -306,8 +316,6 @@ a {
     
 }
 
-
-
 #hundvalpar{
     display: flex;
     flex-direction: column;
@@ -316,6 +324,7 @@ a {
     height: 10em;
     width: 10em;
 }
+
 #hundvalpar1 img{
     display: flex;
     flex-direction: column;
@@ -326,6 +335,12 @@ a {
     border: 1px solid white;
     border-radius: 50%;
 }
+
+#hundvalpar1 img:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+}
+
 .dog{
     display: flex;
     flex-direction: column;
@@ -354,6 +369,10 @@ a {
     width: 8em;
     border: 1px solid white;
     border-radius: 50%;
+}
+#kattungar1 img:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
 }
 
 .kat{
@@ -389,57 +408,70 @@ a {
 #rat img{
     border-radius: 30%;
     border: 2px solid white;
-    max-width: 100vh;
+    max-width: 100vh;  
+    box-shadow: 0 0 1em rgba(0, 0, 0, .5);
 }
 
 #bunny{
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 20em;
     width: 20em;
-  
+    position: relative;
+    bottom: 10px;
+    left: 30px;
+    bottom: 60px;
+    margin-top: 40px;
 }
 
 #bunny img {
     border-radius: 30%;
     border: 2px solid white;
-    max-width: 100vh;
     height: 220px;
+    max-width: 100vh;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .5);
 }
 
 #hamster{
-   
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
     height: 20em;
     width: 20em;
-    
-    
+    position: relative;
+    left: 400px;
+    bottom: 60px;
+    margin-top: 40px;
 }
 
 #hamster img{
     border-radius: 30%;
     border: 2px solid white;
     max-width: 100vh;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .5);
 }
 
 #guinea-pig{
-  
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
     height: 20em;
     width: 20em;
-    
-   
+    position: relative;
+    left: 300px;
+    bottom: 60px;
+    margin-top: 40px;
 }
+
 #guinea-pig img{
     border-radius: 30%;
     border: 2px solid white;
     max-width: 100vh;
-}
-
-.rodent-wrapper{
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
-
+    box-shadow: 0 0 1em rgba(0, 0, 0, .5);
 }
 
 #reptiler1 img{
@@ -451,7 +483,11 @@ a {
     width: 8em;
     border: 1px solid white;
     border-radius: 50%;
-    
+}
+
+#reptiler1 img:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
 }
 
 h3,
@@ -491,6 +527,11 @@ h4{
     border-radius: 50%;
 }
 
+#papegojor1 img:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+}
+
 .bird{
     display: flex;
     flex-direction: column;
@@ -510,15 +551,6 @@ h4{
     height: 10em;
     width: 10em;
 }
-#papegojor1 img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-}
 
 .snake{
     display: flex;
@@ -530,10 +562,6 @@ h4{
     border: 1px solid white;
     border-radius: 50%;
 }
-
-
-
-
 
 
 #puppies{
