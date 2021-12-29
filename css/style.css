@@ -698,6 +698,19 @@ h4{
     border: 1px solid white;
     border-radius: 50%;
 }
+.kitten-td{
+
+}
+
+.kitten-tr{
+
+}
+
+.kitten-img{
+    max-height: 200px;
+    max-width: 300px;
+
+}
 
 #footer{
     width: 100%;
