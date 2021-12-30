@@ -99,6 +99,17 @@ a {
     
 }
 
+#shop-icon{
+    display: flex;
+    right: 10px;
+}
+
+#shopping-cart {
+    display: flex;
+    width: auto;
+    visibility: hidden;
+}
+
 .hero-info{
     width: auto;
 }
