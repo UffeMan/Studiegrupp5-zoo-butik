@@ -3,4 +3,4 @@ $(function () {
     $("#footer").load("../Documents/footer.html");
 });
 
-alert("hej")
+// alert("hej")
