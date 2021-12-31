@@ -703,18 +703,33 @@ h4{
     border: 1px solid white;
     border-radius: 50%;
 }
-.kitten-td{
 
+#kitten-container{
+    width: 100vw;
+    height:1000px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
-.kitten-tr{
+.kitten-td{
+    display:inline-table;
+    transition: .2s;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
 
+.kitten-td:hover{
+    color: red;
+    cursor: pointer;
+    transition: .2s;
 }
 
 .kitten-img{
+    border-radius:10px;
+    box-shadow: 10px 5px 5px rgb(97, 74, 12);
     max-height: 200px;
     max-width: 300px;
-
 }
 
 #footer{
