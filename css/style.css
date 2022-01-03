@@ -99,6 +99,131 @@ a {
     
 }
 
+#shop-wrapper{
+    height: 100%;
+    width: 12em;
+    display: flex;
+    flex-wrap: wrap;
+    text-align:center;
+    justify-content: center;
+    /* align-items: center; */
+    color: rgb(85, 49, 29);
+    font-size: 1.2em;
+    border: 3px solid rgb(85, 49, 29);
+}
+
+#num-of-items{
+    width: 100%;
+    height: 100%;
+    color: burlywood;
+}
+
+#shop-icon, #fin-pur-btn{    
+        height:2em;
+        width:8em;
+        top: 0;
+        border: 1px solid white;
+        font-family: cursive; 
+}
+
+#shop-icon:hover, #fin-pur-btn:hover {
+        background: burlywood;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+}
+
+
+#shopping-cart {    
+    display: none;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;   
+    height: 100%;
+    z-index: 999;
+}
+
+#shopping-cart > * {
+    width: 100%;
+    padding-top: auto;
+}
+
+#show-cart-wrapper {
+    background-color: burlywood;
+    padding-top: auto;
+    margin-top: auto;
+    height: auto;
+}
+
+#products-wrapper{
+    font-family:cursive;
+    height: 100%;
+    width: 100%;
+    /* margin-top: 10em; */
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    grid-row: 2 / 5;
+}
+
+#products-wrapper h3{
+    padding: 0;
+    margin: 0;
+    color:antiquewhite;
+    font-size: 3em;
+    -webkit-text-stroke: 1px rgb(85, 49, 29);
+}
+
+
+
+
+.each-item {
+    border: 1px solid rgb(85, 49, 29);
+    margin: 1em;
+    padding: 1em;
+    width: 12em;    
+
+}
+
+.buy-btn, .remove-item{
+        
+        height:2em;
+        width:8em;
+        top: 0;
+        border: 1px solid white;
+        font-family: cursive; 
+        width: 80%;
+}
+
+.buy-btn:hover, .remove-item:hover {
+        background: burlywood;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+}
+
+
+.item-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto, 1fr);
+    grid-template-rows: repeat(auto, 10em);
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item-wrapper h3{
+    width: 100%;
+    grid-column: 1 / -1;
+}
+
+.item-wrapper h4{
+    grid-column: span 2;
+}
+
 .hero-info{
     width: auto;
 }
