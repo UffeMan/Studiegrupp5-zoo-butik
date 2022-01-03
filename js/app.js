@@ -71,7 +71,7 @@ function generateProducts() {
             productInfo = `
             <div class="each-item id-${products[animal][item].id}"><h4 class="item-name">${item}</h4>
             <p>${products[animal][item].info}</p>
-            <p>${products[animal][item].price}</p>
+            <p>${products[animal][item].price}Kr</p>
             <button class="buy-btn">Köp</button></div>`
             console.log(item + " <----- item")
             console.log(products[animal][item].price)
@@ -137,7 +137,7 @@ function showItemsInCart(shoppingCart) {
             <h5>${item}</h5>
             <p>${shoppingCart[item].price}</p>            
             <p class="amount-of-item">Antal: <button class="decrease-item">-</button>${shoppingCart[item].amount}<button class="increase-item">+</button></p>
-            <p class="total-item-cost">Varupris: ${shoppingCart[item].amount * shoppingCart[item].price}</p>
+            <p class="total-item-cost">Varupris: ${shoppingCart[item].amount * shoppingCart[item].price}Kr</p>
             <button class="remove-item">Remove</button>
         </div>        
             `; 
