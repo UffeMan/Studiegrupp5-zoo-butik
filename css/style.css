@@ -99,19 +99,145 @@ a {
     
 }
 
-#shop-icon{
+#shop-wrapper{
+    height: 100%;
+    width: 12em;
     display: flex;
-    right: 10px;
+    flex-wrap: wrap;
+    text-align:center;
+    justify-content: center;
+    /* align-items: center; */
+    color: rgb(85, 49, 29);
+    font-size: 1.2em;
+    border: 3px solid rgb(85, 49, 29);
 }
 
-#shopping-cart {
+#num-of-items{
+    width: 100%;
+    height: 100%;
+    color: burlywood;
+}
+
+#shop-icon, #fin-pur-btn{    
+        height:2em;
+        width:8em;
+        top: 0;
+        border: 1px solid white;
+        font-family: cursive; 
+}
+
+#shop-icon:hover, #fin-pur-btn:hover {
+        background: burlywood;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+}
+
+
+#shopping-cart {    
+    display: none;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;   
+    height: 100%;
+    z-index: 999;
+}
+
+#shopping-cart > * {
+    width: 100%;
+    padding-top: auto;
+}
+
+#show-cart-wrapper {
+    background-color: burlywood;
+    padding-top: auto;
+    margin-top: auto;
+    height: auto;
+}
+
+#products-wrapper{
+    font-family:cursive;
+    height: 100%;
+    width: 100%;
+    /* margin-top: 10em; */
     display: flex;
-    width: auto;
-    visibility: hidden;
+    flex-wrap: wrap;
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    grid-row: 2 / 5;
+}
+
+#products-wrapper h3{
+    padding: 0;
+    margin: 0;
+    color:antiquewhite;
+    font-size: 3em;
+    -webkit-text-stroke: 1px rgb(85, 49, 29);
+}
+
+
+
+
+.each-item {
+    border: 1px solid rgb(85, 49, 29);
+    margin: 1em;
+    padding: 1em;
+    width: 12em;    
+
+}
+
+.buy-btn, .remove-item{
+        
+        height:2em;
+        width:8em;
+        top: 0;
+        border: 1px solid white;
+        font-family: cursive; 
+        width: 80%;
+}
+
+.buy-btn:hover, .remove-item:hover {
+        background: burlywood;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+}
+
+
+.item-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto, 1fr);
+    grid-template-rows: repeat(auto, 10em);
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item-wrapper h3{
+    width: 100%;
+    grid-column: 1 / -1;
+}
+
+.item-wrapper h4{
+    grid-column: span 2;
 }
 
 .hero-info{
     width: auto;
+}
+
+.hero-info-bunny{
+    width: auto;
+    text-align: left;
+    margin: 20px;
+    
+}
+
+.rodents-info{
+    margin: 20px;
+    text-align: left;
 }
 
 #reptiles-hero-wrapper {
@@ -172,6 +298,7 @@ a {
 
 .reptiles-hero-title {
     font-size: 1.6em;
+    padding: 0.6em;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -179,8 +306,16 @@ a {
 }
 
 .reptiles-hero-content {
-    background: white;
+    background: whitesmoke;
     padding: 0.6em;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.btn {
+    border: 1px solid black;
+    padding: 0.3em 0.5em;
 }
 
 .reptiles-hero-content2 {
@@ -219,13 +354,14 @@ a {
 }
 
 #hero-wrapper-rodents{    
-    grid-area: hero;   
-    text-align: center;
-    background-repeat: no-repeat;
+    grid-area: hero;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 .rodent-video{
-    width: 100%;
-    object-fit: cover;
+     position: relative;
+     width: 100%;     
 }
 
 #hero-wrapper-parrots{
@@ -286,6 +422,16 @@ a {
     background: gray;
 }
 
+#rodent-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    grid-area: contents;
+    background: gray;
+    padding: 20px;
+}
+
 .content-title{
     font-family:cursive;
     font-size: 20px;
@@ -300,8 +446,6 @@ a {
     
 }
 
-
-
 #hundvalpar{
     display: flex;
     flex-direction: column;
@@ -310,6 +454,7 @@ a {
     height: 10em;
     width: 10em;
 }
+
 #hundvalpar1 img{
     display: flex;
     flex-direction: column;
@@ -320,6 +465,12 @@ a {
     border: 1px solid white;
     border-radius: 50%;
 }
+
+#hundvalpar1 img:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+}
+
 .dog{
     display: flex;
     flex-direction: column;
@@ -348,6 +499,10 @@ a {
     width: 8em;
     border: 1px solid white;
     border-radius: 50%;
+}
+#kattungar1 img:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
 }
 
 .kat{
@@ -379,6 +534,14 @@ a {
     width: 20em;
     margin-top: 30px;
 }
+
+#rat img{
+    border-radius: 30%;
+    border: 2px solid white;
+    max-width: 100vh;  
+    box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+}
+
 #bunny{
     display: flex;
     flex-direction: column;
@@ -386,17 +549,75 @@ a {
     align-items: center;
     height: 20em;
     width: 20em;
-    margin-top: 50px;
+    position: relative;
+    bottom: 10px;
+    left: 30px;
+    bottom: 60px;
+    margin-top: 40px;
+}
+
+#bunny img {
+    border-radius: 30%;
+    border: 2px solid white;
+    height: 220px;
+    max-width: 100vh;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .5);
 }
 
 #hamster{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     height: 20em;
     width: 20em;
-    margin-top: 35px;
+    position: relative;
+    left: 400px;
+    bottom: 60px;
+    margin-top: 40px;
+}
+
+#hamster img{
+    border-radius: 30%;
+    border: 2px solid white;
+    max-width: 100vh;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+}
+
+#guinea-pig{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    width: 20em;
+    position: relative;
+    left: 300px;
+    bottom: 60px;
+    margin-top: 40px;
+}
+
+#guinea-pig img{
+    border-radius: 30%;
+    border: 2px solid white;
+    max-width: 100vh;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+}
+
+#reptiler1 img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    width: 8em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#reptiler1 img:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
 }
 
 h3,
@@ -406,19 +627,6 @@ h4{
     margin:10px;
 }
 
-.rat-info{
-    border: 1px solid white;
-}
-
-.rat-info img{
-    height: 20px;
-    width: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
 .mouse{
     display: flex;
     flex-direction: column;
@@ -449,6 +657,11 @@ h4{
     border-radius: 50%;
 }
 
+#papegojor1 img:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+}
+
 .bird{
     display: flex;
     flex-direction: column;
@@ -468,15 +681,6 @@ h4{
     height: 10em;
     width: 10em;
 }
-#papegojor1 img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-}
 
 .snake{
     display: flex;
@@ -491,23 +695,48 @@ h4{
 
 
 
-
-
-
-#puppies{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
+#hero-wrapper-hundvalpar {
     grid-area: hero;
-    
+    background-image: url(/pictures/hundvalpar/grouppsphoto.jpg);
+    background-position: center;
+}
+
+#hero-wrapper-hundvalpar-overlay{
+    grid-area: hero; 
+}
+
+#hero-wrapper-hundvalpar-overlay h1{
+    grid-area: hero;
+    display: flex;
+    justify-content:center;
+    font-family: cursive;
+    word-spacing: 50vh;
+}
+
+#hero-wrapper-hundvalpar-overlay h3{
+    grid-area: hero;
+    display: flex;
+    justify-content:center;
+    font-family: cursive;
+    word-spacing: 30vh;
+}
+
+#hero-wrapper-hundvalpar-overlay h2{
+    grid-area: hero;
+    display: flex;
+    justify-content:center;
+    font-family: cursive;
+    word-spacing: 40vh;
 }
 
 
+#puppies{
+    grid-area: main;
+}
 
 .hundvalpar-title{
     font-family:cursive;
-    font-size: 20px;
+    font-size: 30px;
     margin:10px;
     display: flex;
     justify-content: center;
@@ -515,19 +744,17 @@ h4{
 
 .hundvalpar-info{
     display: flex;
-    justify-content:space-between;
-    
+    justify-content:center;
+    grid-area: main;
 }
-
-
 
 #valp{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 10em;
-    width: 10em;
+    height: 300px;
+    width: 300px;
 }
 
 .valpBild{
@@ -535,10 +762,59 @@ h4{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 8em;
-    width: 8em;
+    height: 150px;
+    width: 150px;
     border: 1px solid white;
     border-radius: 50%;
+}
+
+#merOm{
+    height:2em;
+    width:8em;
+    margin: 2em;
+    border: 1px solid white;
+    font-family: cursive; 
+}
+
+#merOm:hover {
+    background: burlywood;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#puppyInfo{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    display:none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;   
+}
+
+#aboutPuppy{
+    width: 40%;
+    height: 60%;
+    border-radius: 10%;
+    background:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:40px;
+}
+
+.closeInfoBlock{
+    display: flex;
+}
+
+.closeInfoBlock:hover{
+    color: tomato;
+    cursor: pointer;
 }
 
 
@@ -551,6 +827,19 @@ h4{
     width: 10em;
     border: 1px solid white;
     border-radius: 50%;
+}
+.kitten-td{
+
+}
+
+.kitten-tr{
+
+}
+
+.kitten-img{
+    max-height: 200px;
+    max-width: 300px;
+
 }
 
 #footer{
