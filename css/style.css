@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    line-height: 1.2em;
+}
+
 body {
     width: 100%;
     background: lightgray;
@@ -297,7 +301,7 @@ a {
 }
 
 .reptiles-hero-title {
-    font-size: 1.6em;
+    font-size: 1.6rem;
     padding: 0.6em;
     display: flex;
     justify-content: center;
@@ -306,16 +310,10 @@ a {
 }
 
 .reptiles-hero-content {
-    background: whitesmoke;
-    padding: 0.6em;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-}
-
-.btn {
-    border: 1px solid black;
-    padding: 0.3em 0.5em;
+    background-image: linear-gradient(to bottom right, hsl(120, 100%, 25%), hsl(240, 100%, 50%));
+    padding: 1em 2em;
+    font-size: 1.2rem;
+    color: white;
 }
 
 .reptiles-hero-content2 {
@@ -326,18 +324,49 @@ a {
     border: 1px solid black;
     grid-area: main;
     display: grid;
-    grid-template: "food needs" / 1fr 1fr;
-    height: 25em;
+    grid-template: "food needs" 10vh
+    "foodcontent needscontent" 20vh / 1fr 1fr;
+}
+
+.reptilian-food {
+    grid-area: food;
+}
+
+.reptilian-needs {
+    grid-area: needs;
 }
 
 .reptilian-food,
 .reptilian-needs {
-    height: 20%;
     background: grey;
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1em 2em;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+.reptilian-food-content,
+.reptilian-needs-content {
+    /* background: white; */
+    background-image: linear-gradient(to bottom right, hsl(120, 100%, 25%), hsl(240, 100%, 50%));
+    border: 1px solid black;
+    color: white;
+    padding: 1em 2em;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+.reptilian-food-content {
+    grid-area: foodcontent;
+}
+
+.reptilian-needs-content {
+    display: flex;
+    align-items: flex-start;
+    grid-area: needscontent;
 }
 
 #hero-wrapper,
@@ -398,20 +427,6 @@ a {
     width: 100%;
     height: 100%;
 }
-
-/* #sidebar {
-    width: 100%;
-    border: 1px solid black;
-    grid-area: sidebar;
-    background: antiquewhite;
-} */
-
-/* .img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-} */
 
 #content{
     display: flex;
